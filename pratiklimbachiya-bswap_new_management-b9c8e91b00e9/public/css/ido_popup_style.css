@@ -1,0 +1,601 @@
+/*font-family */
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Helvetica-Bold.ttf");
+}
+
+/*font icon */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?5j3rg0");
+  src: url("../fonts/icomoon.eot?5j3rg0#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?5j3rg0") format("truetype"),
+    url("../fonts/icomoon.woff?5j3rg0") format("woff"),
+    url("../fonts/icomoon.svg?5j3rg0#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x:before {
+  content: "\e904";
+}
+
+.icon-checkmark:before {
+  content: "\e903";
+}
+
+.icon-cog:before {
+  content: "\e994";
+}
+
+.icon-checkmark1:before {
+  content: "\ea10";
+}
+
+.icon-chevron-right:before {
+  content: "\e902";
+}
+
+.icon-chevron-left:before {
+  content: "\e901";
+}
+
+.icon-question:before {
+  content: "\e900";
+}
+
+/*@mixin ($width1,$width2){
+        @media  (min-width:$width1px) and (max-width:$width2px){@content}
+        }*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  margin: auto;
+  background-color: #2c2f36;
+}
+
+input {
+  background: none;
+  border: none;
+}
+input:focus {
+  outline: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+}
+
+.img-center {
+  margin: auto;
+}
+
+.modifyfont {
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 25px;
+}
+
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.01;
+  }
+  20% {
+    opacity: 0.02;
+  }
+  30% {
+    opacity: 0.05;
+  }
+  40% {
+    opacity: 0.06;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?5j3rg0");
+  src: url("../fonts/icomoon.eot?5j3rg0#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?5j3rg0") format("truetype"),
+    url("../fonts/icomoon.woff?5j3rg0") format("woff"),
+    url("../fonts/icomoon.svg?5j3rg0#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-question:before {
+  content: "\e900";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c2f36;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.press {
+  font-family: "Press Start 2P", cursive;
+}
+
+.plexmono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.size-24 {
+  font-size: 24px;
+}
+
+.size-18 {
+  font-size: 18px;
+}
+
+.txtcenter {
+  text-align: center;
+}
+
+.normal-weight {
+  font-weight: normal;
+}
+
+.medium-weight {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+}
+
+input {
+  border: none;
+  background: none;
+}
+input:focus {
+  outline: 0;
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:focus {
+  outline: 0;
+}
+
+.form1 {
+  overflow-y: scroll;
+  background-color: rgba(22, 25, 30, 0.9);
+  padding-bottom: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.form1.show {
+  opacity: 1;
+  z-index: 1000;
+}
+.form1 .content {
+  padding-top: 10rem;
+}
+.form1 .content .launchpool {
+  margin-bottom: 5rem;
+}
+.form1 .content form .main-input-group {
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #5a5e67;
+  width: 662px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .main-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.form1 .content form .main-input-group > p::first-letter {
+  text-transform: capitalize;
+}
+.form1 .content form .main-input-group > p span {
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  top: -12px;
+  left: 3px;
+}
+.form1 .content form .main-input-group .input-group {
+  width: 660px;
+  max-width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(243, 186, 47, 0);
+  display: flex;
+  margin-top: 0.8rem;
+}
+.form1 .content form .main-input-group .input-group .sidetxt {
+  font-weight: bold;
+  width: 128px;
+  max-width: 100%;
+  padding: 1.2rem 0;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+.form1 .content form .main-input-group .input-group input {
+  width: calc(100% - 128px);
+  padding-left: 2rem;
+  color: #fff;
+  font-size: 18px;
+  min-height: 48px;
+}
+.form1 .content form .main-input-group .input-group input::placeholder {
+  font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  font-weight: 500;
+}
+.form1 .content form .four-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #5a5e67;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .four-input {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .four-input {
+    flex-direction: column;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+.form1 .content form .four-input .main-input-group {
+  border-bottom: none;
+  margin-bottom: 5rem;
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .four-input .main-input-group {
+    align-items: flex-start;
+    margin-bottom: 5rem;
+  }
+}
+.form1 .content form .four-input > div:nth-child(1) > p {
+  position: relative;
+}
+.form1
+  .content
+  form
+  .four-input
+  > div:nth-child(1)
+  > p
+  .icon-question
+  .popuptoolkit {
+  font-family: "IBM Plex Mono", monospace !important;
+  transition: 0.5s;
+  border-radius: 3px;
+  background-color: white;
+  width: 260px;
+  color: #000;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0.75rem 0.5rem;
+  top: -54px;
+  left: -22px;
+  font-size: 14px;
+  /* opacity: 0; */
+  z-index: -1;
+  position: absolute;
+  line-height: 1.6;
+  position: absolute;
+  left: 15px;
+  opacity: 0;
+}
+.form1
+  .content
+  form
+  .four-input
+  > div:nth-child(1)
+  > p
+  .icon-question:hover
+  span {
+  opacity: 1;
+  z-index: 9999;
+}
+.form1 .content form .select-values {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .select-values {
+    justify-content: center;
+  }
+}
+.form1 .content form .select-values p {
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .select-values p {
+    margin-bottom: 2rem;
+  }
+}
+.form1 .content form .select-values label {
+  color: #febb00;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 10px;
+}
+.form1 .content form .select-values .span-input {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #5a5e67;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+.form1 .content form .select-values .span-input::after {
+  position: absolute;
+  content: "";
+  top: 1px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #febb00;
+  left: 1px;
+  right: 0;
+  margin: auto;
+  display: block;
+  bottom: 0;
+  right: 0px;
+  opacity: 0;
+  transition: 0.5s;
+  margin: 0;
+  top: 2.5px;
+  left: 2.5px;
+}
+.form1 .content form .select-values .input-1,
+.form1 .content form .select-values .input-2,
+.form1 .content form .select-values .input-3,
+.form1 .content form .select-values .input-4 {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .select-values .input-1,
+  .form1 .content form .select-values .input-2,
+  .form1 .content form .select-values .input-3,
+  .form1 .content form .select-values .input-4 {
+    width: 360px;
+    margin-bottom: 2rem;
+  }
+}
+.form1 .content form .select-values .input-1 input,
+.form1 .content form .select-values .input-2 input,
+.form1 .content form .select-values .input-3 input,
+.form1 .content form .select-values .input-4 input {
+  display: none;
+}
+.form1 .content form .select-values .input-1 input:checked ~ span::after,
+.form1 .content form .select-values .input-2 input:checked ~ span::after,
+.form1 .content form .select-values .input-3 input:checked ~ span::after,
+.form1 .content form .select-values .input-4 input:checked ~ span::after {
+  opacity: 1;
+}
+.form1 .content form .select-values .input-1 input:checked ~ label,
+.form1 .content form .select-values .input-2 input:checked ~ label,
+.form1 .content form .select-values .input-3 input:checked ~ label,
+.form1 .content form .select-values .input-4 input:checked ~ label {
+  color: #febb00;
+}
+.form1 .content form .launch-pool {
+  position: relative;
+  width: 662px;
+  margin: 6rem auto;
+  margin-bottom: 10px;
+}
+.form1 .content form .launch-pool button {
+  width: 662px;
+  padding: 2rem 0;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #febb00;
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.form1 .content form .launch-pool button:hover {
+  background-color: #8cb610;
+  transform: scale(1.05);
+}
+.form1 .content form .launch-pool img {
+  position: absolute;
+  top: 5px;
+  left: 35px;
+}
+.form1 .content form .last-txt {
+  font-size: 11px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #bc2b1c;
+  text-align: center;
+}
+@media only screen and (max-width: 1300px) {
+  .form1 .content form .last-txt {
+    font-size: 14px;
+    width: 600px;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+}
+
+.popuptoolkit {
+  transition: 0.5s;
+  border-radius: 3px;
+  background-color: white;
+  width: 260px;
+  color: #000;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0.75rem 0.5rem;
+  top: -38px;
+  left: -22px;
+  font-size: 14px;
+  /* opacity: 0; */
+  z-index: -1;
+  position: absolute;
+  z-index: 9999;
+  position: absolute;
+  left: 15px;
+}
+
+.closeformbtn {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.closeformbtn:hover {
+  transform: rotate(180deg);
+}
